@@ -3,6 +3,6 @@
 require 'sinatra'
 
 get '/' do
-  "Hello"
   "こんにちは"
+  "Hello"
 end
