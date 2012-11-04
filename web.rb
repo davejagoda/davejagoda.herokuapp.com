@@ -8,3 +8,6 @@ end
 get '/env' do
   request.env
 end
+post '/wt' do
+  connections.each { |out| out << parmams << "\n" }
+end
