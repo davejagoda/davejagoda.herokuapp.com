@@ -8,6 +8,9 @@ end
 get '/env' do
   request.env
 end
-post '/wt' do
+post '/post' do
   "POST: Hello こんにちは привет"
+end
+post '/wt' do
+  params
 end
