@@ -9,5 +9,5 @@ get '/env' do
   request.env
 end
 post '/wt' do
-  connections.each { |out| out << params << "\n" }
+  "POST: Hello こんにちは привет"
 end
