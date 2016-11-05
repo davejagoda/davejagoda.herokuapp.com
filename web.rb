@@ -3,14 +3,15 @@
 require 'sinatra'
 
 get '/' do
-  "Hello こんにちは привет"
+  if params.empty?
+    "Hello こんにちは привет"
+  else
+    "Hello こんにちは привет: #{params}"
+  end
+end
+post '/' do
+  "POST: #{params}"
 end
 get '/env' do
   request.env
-end
-post '/post' do
-  "POST: Hello こんにちは привет"
-end
-post '/wt' do
-  params
 end
