@@ -4,6 +4,8 @@ davejagoda.herokuapp.com
 run on local machine
 --------------------
 
-`bundle install --path vendor/bundle`
+```
+bundle install
+PORT=4000 heroku local
+```
 
-`heroku local`
